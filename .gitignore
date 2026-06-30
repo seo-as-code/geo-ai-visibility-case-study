@@ -1,0 +1,18 @@
+# Never commit client data or raw crawl exports
+*.csv
+!sample_*.csv
+data/
+runs/
+*_run_log*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
