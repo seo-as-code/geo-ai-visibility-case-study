@@ -23,7 +23,7 @@ This is a **portfolio piece**. The client is referred to by the codename **“AI
 | **Client (codename)** | **AI Visibility Platform A** — a mid-market B2B SaaS in the GEO / AI-visibility category |
 | **Site** | Bilingual marketing site (EN + ES), ~540 URLs |
 | **Role** | GEO & Content Lead (audit + action layer) |
-| **Engines analyzed** | Perplexity, ChatGPT, Google AI Overviews & AI Mode |
+| **Engine analyzed** | ChatGPT (51-prompt Gauntlet) |
 | **Duration** | ~1 month, part-time |
 
 **GEO (Generative Engine Optimization)** is the discipline of getting a brand cited and recommended *inside* AI-generated answers — the successor to classic SEO, where the "click" is often replaced by a model's recommendation.
@@ -48,7 +48,7 @@ Platform A sells AI-visibility software, yet its **own** site under-performed on
 Four workstreams. Full detail in **[METHODOLOGY.md](./METHODOLOGY.md)**.
 
 ### 1. The GEO Gauntlet (prompt battery)
-A structured battery of **20 prompts in 3 waves** (critical / commercial / authority), mapped to funnel intent (TOFU · MOFU · BOFU) and to branded vs. non-branded queries. Each prompt runs against live AI engines and is scored for:
+A structured battery of **51 prompts run against ChatGPT**, classified into **5 query types** — Branded, Category, Comparison, How-to and Thought Leadership — and mapped to funnel intent (TOFU · MOFU · BOFU) and branded vs. non-branded queries. Each prompt is scored for:
 - **Mention** — does the brand appear at all?
 - **Citation** — is an owned URL cited as a source?
 - **Share of Voice** — brand mentions ÷ total mentions vs. competitors.

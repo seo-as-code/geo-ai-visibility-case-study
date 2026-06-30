@@ -21,15 +21,17 @@ The unit of measurement shifts from *keyword → ranking position* to **prompt �
 A curated battery of prompts that mirrors how a real buyer interrogates an AI assistant about a category and a brand.
 
 ### Structure
-- **20 prompts**, grouped in **3 waves**:
-  - **Wave 1 — Critical**: branded + disambiguation + reputation.
-  - **Wave 2 — Commercial**: category, comparison, "best tool for X" intents.
-  - **Wave 3 — Authority**: thought-leadership / how-to / problem framing.
-- Each prompt is tagged by **funnel intent**: TOFU · MOFU · BOFU.
-- Each prompt is tagged **branded** vs. **non-branded**.
+- **51 prompts**, run against **ChatGPT**.
+- Each prompt classified into one of **5 query types**:
+  - **Branded** — brand name, disambiguation, reputation.
+  - **Category** — generic "tools / platforms for X", no brand named.
+  - **Comparison** — "X vs Y", "best alternative to…", shortlists.
+  - **How-to** — task / problem-solving informational queries.
+  - **Thought leadership** — trends, opinions, "where is the category heading".
+- Each prompt mapped to **funnel intent** (TOFU · MOFU · BOFU) and tagged **branded** vs. **non-branded**.
 
-### Why waves matter
-Brands almost always win **branded + explicit-domain** prompts and lose **generic / category** prompts — which is exactly where buyers shop *before* they know the brand. Splitting by wave makes that blind spot measurable.
+### Why the query types matter
+Brands almost always win **branded** prompts and lose **category / comparison / how-to** prompts — which is exactly where buyers shop *before* they know the brand. Splitting by query type makes that blind spot measurable.
 
 ### Metrics captured per prompt × engine
 | Metric | Definition |
@@ -40,7 +42,7 @@ Brands almost always win **branded + explicit-domain** prompts and lose **generi
 | **Sentiment** | Per feature: *endorsed* / *neutral* / *undermined*. |
 | **Cited sources** | The actual URLs the engine pulled (owned / social / third-party). |
 
-Engines analyzed: **Perplexity, ChatGPT, Google AI Overviews, Google AI Mode** (extensible to Claude, Gemini, Copilot, Grok).
+Engine analyzed: **ChatGPT** (51-prompt battery). The method is extensible to Perplexity, Google AI Overviews / AI Mode, Claude and Gemini.
 
 ---
 
@@ -103,8 +105,8 @@ Each item carries a **pillar**, an **owner hint**, and an **effort estimate**, p
 
 ## 7. Reproducibility checklist
 
-- [ ] Define 20-prompt Gauntlet for the brand's category.
-- [ ] Run across ≥2 AI engines; log mention / citation / SoV / sentiment.
+- [ ] Define the prompt Gauntlet (e.g. 51 prompts across 5 query types) for the brand's category.
+- [ ] Run on the target AI engine(s); log mention / citation / SoV / sentiment.
 - [ ] Dual crawl (per locale) + CrUX pull.
 - [ ] Map every finding to a pillar.
 - [ ] Classify cited sources (owned / social / third-party).

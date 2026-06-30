@@ -23,7 +23,7 @@ Es una **pieza de portfolio**. Al cliente se le nombra con el codename **«Plata
 | **Cliente (codename)** | **Plataforma de Visibilidad IA A** — SaaS B2B en la categoría GEO / visibilidad en IA |
 | **Sitio** | Web de marketing bilingüe (EN + ES), ~540 URLs |
 | **Rol** | GEO & Content Lead (auditoría + capa de acción) |
-| **Motores analizados** | Perplexity, ChatGPT, Google AI Overviews y AI Mode |
+| **Motor analizado** | ChatGPT (Gauntlet de 51 prompts) |
 | **Duración** | ~1 mes, a tiempo parcial |
 
 El **GEO (Generative Engine Optimization)** es la disciplina de conseguir que una marca sea citada y recomendada *dentro* de las respuestas generadas por IA — el sucesor del SEO clásico, donde el "clic" se sustituye a menudo por la recomendación de un modelo.
@@ -48,7 +48,7 @@ La Plataforma A vende software de visibilidad en IA, pero su **propia** web rend
 Cuatro líneas de trabajo. Detalle completo en **[METHODOLOGY.es.md](./METHODOLOGY.es.md)**.
 
 ### 1. El GEO Gauntlet (batería de prompts)
-Una batería estructurada de **20 prompts en 3 oleadas** (crítica / comercial / autoridad), mapeada por intención de funnel (TOFU · MOFU · BOFU) y por consultas branded vs. no-branded. Cada prompt se ejecuta contra motores de IA en vivo y se puntúa por:
+Una batería estructurada de **51 prompts ejecutados en ChatGPT**, clasificados en **5 tipos de consulta** — Branded, Category, Comparison, How-to y Thought Leadership — y mapeados por intención de funnel (TOFU · MOFU · BOFU) y consultas branded vs. no-branded. Cada prompt se puntúa por:
 - **Mención** — ¿aparece la marca?
 - **Citación** — ¿se cita una URL propia como fuente?
 - **Cuota de voz** — menciones de marca ÷ menciones totales vs. competidores.

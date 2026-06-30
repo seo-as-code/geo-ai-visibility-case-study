@@ -21,15 +21,17 @@ La unidad de medida cambia de *keyword → posición de ranking* a **prompt → 
 Una batería curada de prompts que imita cómo un comprador real interroga a un asistente de IA sobre una categoría y una marca.
 
 ### Estructura
-- **20 prompts**, agrupados en **3 oleadas**:
-  - **Oleada 1 — Crítica**: branded + desambiguación + reputación.
-  - **Oleada 2 — Comercial**: categoría, comparación, intención "mejor herramienta para X".
-  - **Oleada 3 — Autoridad**: liderazgo de opinión / how-to / planteamiento de problemas.
-- Cada prompt etiquetado por **intención de funnel**: TOFU · MOFU · BOFU.
-- Cada prompt etiquetado **branded** vs. **no-branded**.
+- **51 prompts**, ejecutados en **ChatGPT**.
+- Cada prompt clasificado en uno de **5 tipos de consulta**:
+  - **Branded** — nombre de marca, desambiguación, reputación.
+  - **Category** — genéricas "herramientas / plataformas para X", sin marca.
+  - **Comparison** — "X vs Y", "mejor alternativa a…", shortlists.
+  - **How-to** — consultas informacionales de tarea / resolución de problemas.
+  - **Thought leadership** — tendencias, opiniones, "hacia dónde va la categoría".
+- Cada prompt mapeado por **intención de funnel** (TOFU · MOFU · BOFU) y etiquetado **branded** vs. **no-branded**.
 
-### Por qué importan las oleadas
-Las marcas casi siempre ganan los prompts **branded + dominio explícito** y pierden los **genéricos / de categoría** — que es justo donde el comprador investiga *antes* de conocer la marca. Separar por oleadas hace ese punto ciego medible.
+### Por qué importan los tipos de consulta
+Las marcas casi siempre ganan los prompts **branded** y pierden los de **categoría / comparación / how-to** — que es justo donde el comprador investiga *antes* de conocer la marca. Separar por tipo de consulta hace ese punto ciego medible.
 
 ### Métricas por prompt × motor
 | Métrica | Definición |
@@ -40,7 +42,7 @@ Las marcas casi siempre ganan los prompts **branded + dominio explícito** y pie
 | **Sentimiento** | Por función: *endorsed* / *neutral* / *undermined*. |
 | **Fuentes citadas** | Las URLs reales que usó el motor (propias / sociales / terceros). |
 
-Motores analizados: **Perplexity, ChatGPT, Google AI Overviews, Google AI Mode** (ampliable a Claude, Gemini, Copilot, Grok).
+Motor analizado: **ChatGPT** (batería de 51 prompts). El método es ampliable a Perplexity, Google AI Overviews / AI Mode, Claude y Gemini.
 
 ---
 
@@ -103,8 +105,8 @@ Cada ítem lleva un **pilar**, una **pista de responsable** y una **estimación 
 
 ## 7. Checklist de reproducibilidad
 
-- [ ] Definir el Gauntlet de 20 prompts para la categoría de la marca.
-- [ ] Ejecutar en ≥2 motores de IA; registrar mención / citación / SoV / sentimiento.
+- [ ] Definir el Gauntlet de prompts (p. ej. 51 prompts en 5 tipos de consulta) para la categoría de la marca.
+- [ ] Ejecutar en el/los motor(es) de IA objetivo; registrar mención / citación / SoV / sentimiento.
 - [ ] Doble rastreo (por idioma) + extracción de CrUX.
 - [ ] Mapear cada hallazgo a un pilar.
 - [ ] Clasificar las fuentes citadas (propias / sociales / terceros).
