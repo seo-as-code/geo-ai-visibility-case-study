@@ -4,7 +4,7 @@
 
 🌐 **[Read in English →](./METHODOLOGY.md)**
 
-Este documento explica *cómo* se realizó la auditoría del [caso de estudio](./README.es.md), para que el enfoque sea reproducible en cualquier marca. El cliente está anonimizado (codename **«Plataforma de Visibilidad IA A»**); los competidores se nombran como contexto público de mercado.
+Este documento explica *cómo* se realizó el proyecto del [caso de estudio](./README.es.md), para que el enfoque sea reproducible en cualquier marca. El cliente está anonimizado (codename **«Plataforma de Visibilidad IA A»**); los competidores se nombran como contexto público de mercado. Ver también **[RESULTS.es.md](./RESULTS.es.md)** (scoreboard medido) y **[HOMEPAGE_REDESIGN.es.md](./HOMEPAGE_REDESIGN.es.md)** (copy antes/después).
 
 ---
 

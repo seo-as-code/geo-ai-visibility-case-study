@@ -1,8 +1,8 @@
 <!-- Idioma: Español | [English](./README.md) -->
 
-# Auditoría GEO / Visibilidad en IA — Caso de estudio
+# Auditoría y optimización GEO / Visibilidad en IA — Caso de estudio
 
-> Cómo audité la web de un SaaS B2B para mejorar su **visibilidad dentro de las respuestas de IA** (ChatGPT, Perplexity, Google AI Overviews/Mode) y convertí los hallazgos en un plan de acción priorizado y listo para ejecutar.
+> Un proyecto completo de Mes 1 para un SaaS B2B: medir la **visibilidad dentro de las respuestas de IA** (ChatGPT), auditar la base técnica, **rediseñar la home para GEO** y producir **contenido nuevo apto para IA** + un sistema operativo repetible.
 
 🌐 **[Read in English →](./README.md)**
 
@@ -12,7 +12,7 @@
 
 ## ⚠️ Sobre este caso de estudio
 
-Es una **pieza de portfolio**. Al cliente se le nombra con el codename **«Plataforma de Visibilidad IA A»** — su nombre real y dominio se omiten. Los competidores sí se nombran porque son productos públicos y aportan contexto de mercado útil. Todas las métricas son reales.
+Pieza de portfolio. Al cliente se le nombra con el codename **«Plataforma de Visibilidad IA A»** — su nombre real, dominio, clientes y personas se omiten. Las *herramientas* competidoras sí se nombran porque son productos públicos y aportan contexto de mercado. Todas las métricas son reales, medidas en junio de 2026.
 
 ---
 
@@ -22,112 +22,155 @@ Es una **pieza de portfolio**. Al cliente se le nombra con el codename **«Plata
 |---|---|
 | **Cliente (codename)** | **Plataforma de Visibilidad IA A** — SaaS B2B en la categoría GEO / visibilidad en IA |
 | **Sitio** | Web de marketing bilingüe (EN + ES), ~540 URLs |
-| **Rol** | GEO & Content Lead (auditoría + capa de acción) |
-| **Motor analizado** | ChatGPT (Gauntlet de 51 prompts) |
-| **Duración** | ~1 mes, a tiempo parcial |
+| **Rol** | GEO & Content Lead — auditoría **y** capa de acción |
+| **Motor medido** | ChatGPT (Gauntlet de 51 prompts) |
+| **Duración** | Mes 1, ~4 h/día |
 
 El **GEO (Generative Engine Optimization)** es la disciplina de conseguir que una marca sea citada y recomendada *dentro* de las respuestas generadas por IA — el sucesor del SEO clásico, donde el "clic" se sustituye a menudo por la recomendación de un modelo.
 
 ### El panorama competitivo
-La Plataforma A compite en una categoría saturada. La auditoría la comparó con:
-- **Herramientas GEO-nativas:** Profound, Peec AI, Otterly AI, Scrunch AI, Rankscale, AirOps, Conductor, Knowatoa, LLM Pulse, xFunnel.
-- **Suites SEO clásicas que añaden "funciones GEO":** Semrush, Ahrefs, SE Ranking, BrightEdge, Surfer SEO, Writesonic.
-
-Esto importa: las suites clásicas anuncian *millones* de keywords/prompts, pero en un nicho concreto la mayoría son irrelevantes o están obsoletas. Las plataformas GEO-nativas, en cambio, generan los prompts a partir de la **entidad, el contexto y el mercado** de la marca — que es la verdadera batalla.
+La Plataforma A compite en una categoría saturada, comparada con **herramientas GEO-nativas** (Profound, Peec AI, Otterly AI, Scrunch AI, Rankscale, AirOps, Conductor, Goodie AI, AthenaHQ) y **suites SEO clásicas que añaden "funciones GEO"** (Semrush, Ahrefs, SE Ranking, BrightEdge, Surfer, Frase). Las suites clásicas anuncian *millones* de keywords/prompts, pero en un nicho concreto la mayoría son irrelevantes u obsoletas; las plataformas GEO-nativas generan los prompts a partir de la **entidad, el contexto y el mercado** de la marca — la verdadera batalla.
 
 ---
 
 ## El problema
 
-La Plataforma A vende software de visibilidad en IA, pero su **propia** web rendía mal en las consultas exactas que sus compradores hacen a los asistentes de IA. El encargo: diagnosticar *por qué* la marca era invisible en prompts genéricos/de categoría y producir un plan de acción de nivel operativo — no una auditoría puntual.
+La Plataforma A vende software de visibilidad en IA, pero su **propia** web rendía mal en las consultas exactas que sus compradores hacen a los asistentes de IA. El encargo: diagnosticar *por qué* la marca era invisible en prompts genéricos/de categoría y entregar un plan de nivel operativo — no una auditoría puntual.
 
 ---
 
-## Metodología
+## Alcance del trabajo entregado (Mes 1)
 
-Cuatro líneas de trabajo. Detalle completo en **[METHODOLOGY.es.md](./METHODOLOGY.es.md)**.
+Cuatro líneas, de la medición a los activos publicables:
 
-### 1. El GEO Gauntlet (batería de prompts)
-Una batería estructurada de **51 prompts ejecutados en ChatGPT**, clasificados en **5 tipos de consulta** — Branded, Category, Comparison, How-to y Thought Leadership — y mapeados por intención de funnel (TOFU · MOFU · BOFU) y consultas branded vs. no-branded. Cada prompt se puntúa por:
-- **Mención** — ¿aparece la marca?
-- **Citación** — ¿se cita una URL propia como fuente?
-- **Cuota de voz** — menciones de marca ÷ menciones totales vs. competidores.
-- **Sentimiento** — endorsed / neutral / undermined, función por función.
+| Línea | Qué entregué |
+|-------|--------------|
+| **1. Medición** | El **GEO Gauntlet** — 51 prompts en ChatGPT, puntuados por mención / citación / SoV / sentimiento, mapeados a 5 tipos de consulta y 4 pilares GEO. Reproducible (YAML + CSV + script de scoreboard). |
+| **2. Auditoría técnica** | CrUX (Core Web Vitals) + doble rastreo EN/ES con Screaming Frog: silos i18n, fallos de HTML semántico, higiene de SERP, huella de rastreo del KB. |
+| **3. Rediseño GEO de la home** | Reescritura sección a sección de la home (EN + ES) como **preview HTML**, subiendo la puntuación GEO on-page de **5,5 → 8,8**. `<h1>` real, módulos de producto citables, copy en español corregido, schema de Review/FAQ. |
+| **4. Contenido + capa operativa** | Contenido nuevo apto para IA (blog EN + artículo de knowledge base ES), un plan de interlinking, plantillas de briefs y un protocolo operativo semanal con backlog P0/P1/P2. |
 
-### 2. Los 4 pilares GEO
-
-| Pilar | Pregunta que responde |
-|-------|------------------------|
-| **Entity (Entidad)** | ¿Sabe la IA *quién* es la marca sin confundirla? |
-| **Extractability (Extractabilidad)** | ¿Puede el modelo extraer datos limpiamente de la página? |
-| **Evidence (Evidencia)** | ¿Hay pruebas (casos, datos, fuentes de terceros)? |
-| **Consensus (Consenso)** | ¿Coinciden las señales en toda la web y entre idiomas? |
-
-### 3. Auditoría técnica de base
-Doble rastreo EN/ES, Core Web Vitals (datos de usuario real), semántica HTML, i18n/hreflang, higiene de SERP.
-
-### 4. Análisis de contenido y gap de citaciones
-Qué URLs cita *ya* la IA, dónde falta validación de terceros y por qué la base de conocimiento no se recupera.
+Detalle: **[RESULTS.es.md](./RESULTS.es.md)** (scoreboard) · **[HOMEPAGE_REDESIGN.es.md](./HOMEPAGE_REDESIGN.es.md)** (antes/después) · **[METHODOLOGY.es.md](./METHODOLOGY.es.md)** (cómo).
 
 ---
 
-## Hallazgos clave
+## Resultados medidos — el GEO Gauntlet (ChatGPT)
 
-### Puntuación GEO: **5,5 → 8,8** (proyectada)
+**51 prompts**, un solo motor, chat nuevo + memoria desactivada, texto exacto desde un YAML versionado.
+
+| Métrica | Resultado |
+|---------|-----------|
+| Prompts completados | 51 / 51 |
+| Mention rate | 49% (25/51) |
+| Citation rate | 45% (23/51) |
+| Branded citation rate | 83% (10/12) |
+
+| Resultado | N |
+|-----------|---|
+| Victory | 20 |
+| Defeat | 24 |
+| Partial | 5 |
+| Ignored | 2 |
+
+### Por tipo de consulta
+| Tipo | Balance | Citación |
+|------|---------|----------|
+| **Branded** | 10V · 1P · 1I | 83% |
+| **Comparison** | 9V · 1D · 1P | Alta |
+| **Category** | 0V · 7D · 2P · 1I | Baja |
+| **How-to / problema** | 0V · 10D | **0%** |
+| **Thought leadership** | 1V · 6D · 1P | Baja |
+
+### Por pilar GEO
+| Pilar | Cite rate | Lectura |
+|-------|-----------|---------|
+| Entidad | 82% (9/11) | Fuerte con desambiguación |
+| Evidencia | 73% (11/15) | Fuerte en comparativas directas |
+| Consenso | 20% (3/15) | Débil en shortlists / consultas de experto |
+| Extractabilidad | **0%** (0/10) | El knowledge base nunca se recupera en how-to |
+
+**El hallazgo central — dos regímenes de visibilidad:** la Plataforma A *gana* cuando el comprador ya conoce la marca o nombra un vendor (branded + comparativa). *Pierde* todo el funnel de **descubrimiento** — consultas genéricas de categoría y how-to, justo donde el comprador investiga *antes* de conocer la marca. El cuello de botella es el descubrimiento pre-marca, no la comparativa activa.
+
+---
+
+## Rediseño GEO de la home: **5,5 → 8,8**
+
+Audité la home en vivo sección a sección y produje un **preview HTML** optimizado para GEO (EN + ES). Antes/después completo en **[HOMEPAGE_REDESIGN.es.md](./HOMEPAGE_REDESIGN.es.md)**.
 
 | Pilar | Actual | Propuesto |
 |-------|--------|-----------|
-| Entity | 6,5 | 9,0 |
-| Extractability | 4,0 | 8,5 |
-| Evidence | 5,5 | 8,5 |
-| Consensus | 8,0 | 9,5 |
-| **Global** | **5,5** | **8,8** |
+| Entidad | 6,5 | 9,0 |
+| Extractabilidad | 4,0 | 8,5 |
+| Evidencia | 5,5 | 8,5 |
+| Consenso | 8,0 | 9,5 |
+| **GEO Score** | **5,5** | **8,8** |
 
-El mayor gap estaba en **Extractabilidad (+4,5)** — el pilar que más directamente controla si la IA te cita o te ignora.
+Claves del rediseño:
+- **`<h1>` semántico real** con una definición de *categoría* («Plataforma de visibilidad en LLMs») en vez de un eslogan dentro de un `<div>` con estilo — para que la IA pueda copiar/parafrasear qué *es* el producto.
+- **ICP movido a un kicker** sobre el H1, para que el público objetivo deje de competir con la definición de entidad.
+- **Subtítulo factual**: 7 motores de IA nombrados + método + métricas (triples extraíbles).
+- **Suite de producto reescrita** en 4 módulos citables, cada uno con copy operativo y CTA específico de intención.
+- **Español corregido**: la home en vivo mostraba tokens de traducción automática rotos (fragmentos tipo *«…la plataforma por ti»*) que rompían el parseo de entidad.
+- **Schema de Review + FAQ**, casos de éxito con una-métrica-una-entidad-un-enlace y una FAQ GEO-vs-SEO literalmente citable.
+
+---
+
+## Hallazgos técnicos
 
 ### Hallazgo 1 — El rendimiento *no* era el problema
-Los Core Web Vitals pasaban en origen (LCP 1.392 ms · INP 66 ms · CLS 0,01). Esto permitió redirigir todo el esfuerzo a **semántica, arquitectura y copy** en vez de a un inútil "proyecto de velocidad".
+Los Core Web Vitals pasaban en origen (LCP 1.392 ms · INP 66 ms · CLS 0,01). Esto redirigió todo el esfuerzo a **semántica, arquitectura y copy** en vez de a un inútil "proyecto de velocidad".
 
 ### Hallazgo 2 — EN y ES eran silos desconectados
 El rastreo en inglés encontró **0** enlaces internos al árbol español, dejando huérfanas **~176 URLs en español**. El `hreflang` / `x-default` no estaba bien implementado → los motores de IA recibían señales de idioma contradictorias.
 
-### Hallazgo 3 — Deuda de localización: el 87% de URLs ES tenían slug en inglés
+### Hallazgo 3 — Sin `<h1>` semántico
+El titular de la home era un `<div>` con estilo, no un `<h1>` semántico — repetido en **7 URLs clave**. Los modelos que ponderan el primer bloque de encabezado no podían clasificar el tema de la página.
+
+### Hallazgo 4 — Deuda de localización: el 87% de URLs ES tenían slug en inglés
 De **219** URLs en español, **190 (87%)** tenían **slug en inglés sirviendo contenido íntegramente en español**. Construí un script para clasificar idioma-del-slug vs. idioma-del-contenido, marcar cada desajuste y **proponer un slug español limpio + mapa 301** para las 190. (Ver `tooling/`.)
 
-### Hallazgo 4 — Deuda de enlaces rotos
-Un rastreo completo de ~**540 URLs** detectó **~103 con 404** (≈19%) — presupuesto de rastreo desperdiciado y destinos de citación muertos.
+### Hallazgo 5 — Deuda de enlaces rotos e higiene de SERP
+Un rastreo completo de ~**540 URLs** detectó **~103 con 404** (≈19%). Además, títulos demasiado largos (**133/176 ES**, 49/177 EN sobre 60 caracteres), meta ausente en `/compare` y un slug de KB roto (`/%20ai-retrieval-layer`).
 
-### Hallazgo 5 — El gap de citaciones (pilar Evidencia)
-En la auditoría de una marca piloto, esta tenía citaciones **propias + sociales** fuertes pero **cero citaciones de terceros**, mientras los competidores aparecían en prensa y directorios. Un liderazgo en cuota de voz construido solo sobre tu propio dominio es frágil: se desmorona en cuanto un rival consigue cobertura editorial.
+### Hallazgo 6 — El gap de citaciones (pilar Evidencia)
+Citaciones **propias + sociales** fuertes pero **cero de terceros**, mientras los competidores aparecían en prensa y directorios. Un liderazgo en cuota de voz construido solo sobre tu dominio es frágil: se cae en cuanto un rival consigue cobertura editorial.
 
-### Hallazgo 6 — Sin `<h1>` semántico
-El titular de la home era un `<div>` con estilo, no un `<h1>` semántico — repetido en **7 URLs clave**. Los modelos que ponderan el primer bloque de encabezado no podían clasificar el tema de la página.
+---
+
+## Contenido nuevo y capa operativa producidos
+
+No solo diagnóstico — activos publicables:
+
+- **Borrador de blog EN** — *"AI Visibility for Small Marketing Teams: From Data to Weekly Actions"* — un bucle operativo semanal en 4 pasos (diseñado para ganar los prompts how-to/problema que puntuaron 0%).
+- **Borrador de KB ES** — *"De citation gap a brief de contenido en 10 minutos"* — un flujo práctico y extraíble con plantilla de brief rellenable.
+- **Plan de interlinking** — empujar autoridad desde URLs que ChatGPT *ya cita* (producto, MCP, pricing) hacia los pilares del KB poco recuperados, con anchor text recomendado.
+- **Sistema operativo** — protocolo semanal, plantillas de brief y un backlog P0/P1/P2 ligado a prompts *concretos* que se perdían (no una checklist genérica), más un bucle de re-medición.
 
 ---
 
 ## Recomendaciones (priorizadas)
 
-| Prioridad | Acción | Pilar |
-|-----------|--------|-------|
-| **P0** | `<h1>` semántico real con copy de categoría en home (EN/ES) | Entity / Extractability |
-| **P0** | `hreflang` EN↔ES + `x-default` + enlaces bidireccionales | Consensus |
-| **P0** | Schema de Review/Organization + prueba social estructurada | Entity / Evidence |
-| **P1** | Localizar 190 slugs ES (mapa 301 incluido) | Consensus |
-| **P1** | Interlinking de pilares KB desde URLs que la IA ya cita | Extractability |
-| **P1** | Conseguir citaciones de terceros (prensa, directorios) | Evidence |
-| **P2** | Corregir 103× 404, higiene de title/meta, slugs rotos | Extractability |
+| Prioridad | Acción | Pilar | Responde a prompts |
+|-----------|--------|-------|--------------------|
+| **P0** | `<h1>` semántico real + copy de categoría en home (EN/ES) | Entity / Extractability | categoría, entidad |
+| **P0** | `hreflang` EN↔ES + `x-default` + enlaces bidireccionales | Consensus | descubrimiento localizado |
+| **P0** | Páginas how-to extraíbles en KB + FAQ schema, enlazadas desde URLs ya citadas | Extractability | 31–38 (la oleada del 0%) |
+| **P1** | Conseguir citaciones de terceros (directorios, prensa, reseñas) | Evidence | experto / consenso |
+| **P1** | Localizar 190 slugs ES (mapa 301 incluido) | Consensus | recuperación localizada |
+| **P2** | Corregir 103× 404, higiene de title/meta, slugs rotos | Extractability | recuperación vía SERP |
 
 ---
 
 ## Competencias y herramientas demostradas
 
-- **Estrategia GEO / AEO** — baterías de prompts, scoring por pilares, medición multi-motor
-- **SEO técnico** — doble rastreo con Screaming Frog, CrUX, hreflang, HTML semántico
-- **Tooling de datos** — crawler en Python + clasificador de desajuste de idioma (slug vs. contenido) con propuestas 301 automáticas
-- **Análisis** — cuota de voz, gap de citaciones y análisis de sentimiento vs. competidores
-- **Mentalidad de operador** — convertí el diagnóstico en un plan P0/P1/P2 con responsables y esfuerzo
+- **Estrategia GEO / AEO** — batería de 51 prompts, scoring por pilares, diagnóstico de dos regímenes, protocolo reproducible
+- **SEO técnico** — doble rastreo con Screaming Frog, CrUX, hreflang, HTML semántico, higiene de SERP
+- **Copywriting de conversión/GEO** — reescritura completa de la home (EN/ES) optimizada para extracción por LLM *y* para humanos
+- **Producción de contenido** — blog + artículos KB aptos para IA, plantillas de brief, planes de interlinking
+- **Tooling de datos** — crawler en Python + clasificador de idioma slug/contenido con propuestas 301 automáticas
+- **Mentalidad de operador** — convertí el diagnóstico en un sistema P0/P1/P2 con responsables, esfuerzo y re-medición
 
-**Stack:** Python (`requests`, `BeautifulSoup`, `csv`) · Screaming Frog · CrUX · motores de IA en vivo · reporting en Markdown.
+**Stack:** Python (`requests`, `BeautifulSoup`, `csv`) · Screaming Frog · CrUX · ChatGPT · preview HTML/CSS · reporting en Markdown.
 
 ---
 
@@ -135,19 +178,19 @@ El titular de la home era un `<div>` con estilo, no un `<h1>` semántico — rep
 
 ```
 geo-audit-case-study/
-├── README.md           ← caso de estudio (English)
-├── README.es.md        ← caso de estudio (Español)
-├── METHODOLOGY.md      ← GEO Gauntlet, pilares, scoring (EN)
-├── METHODOLOGY.es.md   ← metodología (ES)
-├── LINKEDIN_POST.md    ← resumen listo para publicar (EN + ES)
+├── README.md / README.es.md          ← caso de estudio (EN / ES)
+├── RESULTS.md / RESULTS.es.md         ← scoreboard completo del GEO Gauntlet
+├── HOMEPAGE_REDESIGN.md / .es.md      ← home antes/después (5,5 → 8,8)
+├── METHODOLOGY.md / METHODOLOGY.es.md ← Gauntlet, pilares, técnico, contenido
+├── LINKEDIN_POST.md                   ← resumen listo para publicar (EN + ES)
 └── tooling/
-    └── url_language_audit.py   ← crawler + clasificador de idioma slug/contenido
+    └── url_language_audit.py          ← crawler + clasificador de idioma slug/contenido
 ```
 
 ---
 
 ## Sobre mí
 
-Especialista en GEO y contenido centrado en la **capa de acción**: no solo medir la visibilidad en IA, sino operarla — ejecutar los cambios estructurales y de contenido que hacen que los motores de IA citen una marca. Abierto a roles de GEO / visibilidad en IA / SEO técnico.
+Especialista en GEO y contenido centrado en la **capa de acción**: no solo medir la visibilidad en IA, sino operarla — ejecutar los cambios técnicos, de diseño y de contenido que hacen que los motores de IA citen una marca. Abierto a roles de GEO / visibilidad en IA / SEO técnico.
 
 *Cliente anonimizado. Este repositorio es una demostración de metodología y competencias.*

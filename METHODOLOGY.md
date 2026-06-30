@@ -4,7 +4,7 @@
 
 🌐 **[Leer en Español →](./METHODOLOGY.es.md)**
 
-This document explains *how* the audit in the [case study](./README.md) was run, so the approach is reproducible on any brand. The client is anonymized (codename **“AI Visibility Platform A”**); competitor tools are named as public market context.
+This document explains *how* the engagement in the [case study](./README.md) was run, so the approach is reproducible on any brand. The client is anonymized (codename **“AI Visibility Platform A”**); competitor tools are named as public market context. See also **[RESULTS.md](./RESULTS.md)** (measured scoreboard) and **[HOMEPAGE_REDESIGN.md](./HOMEPAGE_REDESIGN.md)** (before/after copy).
 
 ---
 
