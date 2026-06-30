@@ -182,7 +182,6 @@ geo-audit-case-study/
 ├── RESULTS.md / RESULTS.es.md         ← full GEO Gauntlet scoreboard
 ├── HOMEPAGE_REDESIGN.md / .es.md      ← homepage before/after (5.5 → 8.8)
 ├── METHODOLOGY.md / METHODOLOGY.es.md ← Gauntlet, pillars, technical, content
-├── LINKEDIN_POST.md                   ← ready-to-post summary (EN + ES)
 └── tooling/
     └── url_language_audit.py          ← crawler + slug/content language classifier
 ```
